@@ -405,8 +405,15 @@ namespace Microsoft.AspNetCore.Mvc.ModelBinding
         /// <inheritdoc />
         public override int GetHashCode()
         {
-            return Identity.GetHashCode();
+            if (_hashCode == null)
+            {
+                _hashCode = Identity.GetHashCode();
+            }
+
+            return _hashCode.Value;
         }
+
+        private int? _hashCode;
 
         private void InitializeTypeInformation()
         {
