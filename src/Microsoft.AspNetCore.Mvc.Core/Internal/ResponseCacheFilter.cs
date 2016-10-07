@@ -22,7 +22,7 @@ namespace Microsoft.AspNetCore.Mvc.Internal
         private ResponseCacheLocation? _cacheLocation;
         private bool? _cacheNoStore;
         private string _cacheVaryByHeader;
-        private string[] _cacheVaryByQueryKey;
+        private string[] _cacheVaryByQueryKeys;
 
         /// <summary>
         /// Creates a new instance of <see cref="ResponseCacheFilter"/>
@@ -80,8 +80,8 @@ namespace Microsoft.AspNetCore.Mvc.Internal
         /// </summary>
         public string[] VaryByQueryKeys
         {
-            get { return _cacheVaryByQueryKey ?? _cacheProfile.VaryByQueryKeys; }
-            set { _cacheVaryByQueryKey = value; }
+            get { return _cacheVaryByQueryKeys ?? _cacheProfile.VaryByQueryKeys; }
+            set { _cacheVaryByQueryKeys = value; }
         }
 
         /// <inheritdoc />
