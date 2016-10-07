@@ -76,7 +76,7 @@ namespace Microsoft.AspNetCore.Mvc.Internal
         }
 
         /// <summary>
-        /// TODO:
+        /// Gets or sets the query keys used by the response cache middleware for creating secondary vary keys.
         /// </summary>
         public string[] VaryByQueryKeys
         {
