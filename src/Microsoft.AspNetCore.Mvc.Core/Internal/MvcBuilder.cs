@@ -4,6 +4,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Framework.DependencyInjection;
 
 namespace Microsoft.AspNetCore.Mvc.Internal
 {

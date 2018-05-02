@@ -15,7 +15,8 @@
     "Microsoft.AspNetCore.Server.Kestrel": "1.1.0-*",
     "Microsoft.AspNetCore.StaticFiles": "1.1.0-*",
     "Microsoft.Extensions.Configuration.Json": "1.1.0-*",
-    "Microsoft.Extensions.Logging.Console": "1.1.0-*"
+    "Microsoft.Extensions.Logging.Console": "1.1.0-*",
+    "Microsoft.Framework.OptionsModel": "1.0.0-beta8"
   },
   "publishOptions": {
     "include": [
